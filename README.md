@@ -49,7 +49,7 @@ export PATH="/usr/local/bin:$PATH"
     * Updates OS X and installs Xcode command line tools
 * [brew.sh script](#brewsh-script)
     * Installs common Homebrew formulae and apps
-* [osx.sh script](#osxsh-script)
+* [.osx script](#.osx-script)
     * Sets up OS X defaults geared towards developers
 * [web.sh script](#websh-script)
     * Sets up JavaScript web development
@@ -396,7 +396,7 @@ Since we spend so much time in the terminal, we should try to make it a more ple
 
 #### Configuration
 
-The [bootstrap.sh script](#bootstrapsh-script) and [osx.sh script](#osxsh-script) contain terminal customizations.
+The [bootstrap.sh script](#bootstrapsh-script) and [.osx script](#.osx-script) contain terminal customizations.
 
 ### iTerm2
 
