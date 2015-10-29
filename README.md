@@ -12,7 +12,7 @@ Setting up a new developer machine can be an **ad-hoc, manual, and time-consumin
 * **OS X defaults** geared towards developers
 * **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, etc
 * **Developer apps**: iTerm2, Sublime Text (Sublime Packages), Atom, Chrome, etc
-* **Javascript web development**: Node.js, JSHint, Grunt, Bowerm Compass and SASS
+* **Javascript web development**: Node.js, JSHint, Grunt, Bower, Compass and SASS
 
 ### But...I Don't Need All These Tools!
 
@@ -221,11 +221,11 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
   <br/>
 </p>
 
-When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `osx.sh` script also configures common third-party apps such Sublime Text and Chrome.
+When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `.osx` script also configures common third-party apps such Sublime Text and Chrome.
 
-**Note**: **I strongly encourage you read through the commented [osx.sh source file](https://github.com/donnemartin/dev-setup/blob/master/osx.sh) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
+**Note**: **I strongly encourage you read through the commented [.osx source file](https://github.com/donnemartin/dev-setup/blob/master/.osx) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
 
-Run the `osx.sh` script:
+Run the `.osx` script:
 
 ```bash
 ./.macos

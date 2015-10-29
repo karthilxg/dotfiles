@@ -53,7 +53,7 @@ function runDots() {
             echo "Setting sensible OSX defaults."
             echo "------------------------------"
             echo ""
-            ./osx.sh
+            ./.osx
         fi
         if [ $ARG == "webdev" ] || [ $ARG == "all" ]; then
             # Run the webdev.sh Script
