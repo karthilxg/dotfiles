@@ -1,3 +1,4 @@
+# Karthi's dotfiles
 
 # Karthi's dotfiles
 
@@ -7,13 +8,13 @@
 
 ## Motivation
 
-Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `dotfiles` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
+Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `gotfiles` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
 
 * **OS X updates and Xcode Command Line Tools**
 * **OS X defaults** geared towards developers
 * **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, etc
 * **Developer apps**: iTerm2, Sublime Text (Sublime Packages), Atom, Chrome, etc
-* **Javascript web development**: Node.js, JSHint, Grunt, Bower, Compass and SASS
+* **Javascript web development**: Node.js, JSHint, Grunt, Bowerm Compass and SASS
 
 ### But...I Don't Need All These Tools!
 
@@ -109,7 +110,7 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/karthilxg/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx, LICENSE.txt}
+cd; curl -#L https://github.com/karthilxg/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
 ```
 
 To update later on, just run that command again.
@@ -231,7 +232,6 @@ Run the `osx.sh` script:
 ```bash
 ./.macos
 ```
-
 **For your terminal customization to take full effect, quit and re-start the terminal.**
 
 ##### brew.sh script
@@ -242,6 +242,8 @@ Run the `osx.sh` script:
 </p>
 
 When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew, of course):
+
+Some of the apps installed by the `brew.sh` script include: Chrome, Firefox, Sublime Text, Atom, Dropbox, Evernote, Skype, Slack, Alfred, etc.  **For a full listing of installed formulae and apps, refer to the commented [brew.sh source file](https://github.com/karthilxg/dotfiles/blob/master/brew.sh) directly and tweak it to suit your needs.**
 
 Some of the apps installed by the `brew.sh` script include: Chrome, Firefox, Sublime Text, Atom, Dropbox, Evernote, Skype, Slack, Alfred, etc.  **For a full listing of installed formulae and apps, refer to the commented [brew.sh source file](https://github.com/karthilxg/dotfiles/blob/master/brew.sh) directly and tweak it to suit your needs.**
 
@@ -799,16 +801,10 @@ This repository contains a variety of content; some developed by Karthi Thangara
 
 The content developed by Karthi Thangaraj is distributed under the following license:
 
-Copyright 2015 Karthi Thangaraj
+Copyright 2018 Karthi Thangaraj
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
