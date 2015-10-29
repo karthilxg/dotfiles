@@ -12,7 +12,7 @@ Setting up a new developer machine can be an **ad-hoc, manual, and time-consumin
 * **OS X defaults** geared towards developers
 * **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, etc
 * **Developer apps**: iTerm2, Sublime Text (Sublime Packages), Atom, Chrome, etc
-* **Javascript web development**: Node.js, JSHint, Grunt, Bowerm Compass and SASS
+* **Javascript web development**: Node.js, JSHint, Grunt, Bower, Compass and SASS
 
 ### But...I Don't Need All These Tools!
 
@@ -26,7 +26,7 @@ If you're interested in automation, `dotfiles` provides a customizable [setup sc
 
 ### Specify the `$PATH`
 
-If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used]()) takes place.
+If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/karthilxg/dotfiles/blob/master/.aliases#L24-29)) takes place.
 
 Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
 
@@ -35,7 +35,7 @@ export PATH="/usr/local/bin:$PATH"
 ```
 
 ### Sections Summary
-* Section 1 contains the dotfiles/scripts and instructions to set up your system.
+* Section 1 contains the `dotfiles/scripts` and instructions to set up your system.
 * Sections 2 through 4 detail more information about installation, configuration, and usage for topics in Section 1.
 
 ## Section 1: Installation
@@ -76,7 +76,6 @@ export PATH="/usr/local/bin:$PATH"
 * [Credits](#credits)
 * [Contact Info](#contact-info)
 * [License](#license)
-
 
 ## Section 1: Installation
 
@@ -138,7 +137,21 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/karthilxg/dotfiles/fork) instead, though.
 
-Run all:
+###### Git-free install
+
+To install these dotfiles without Git:
+
+```bash
+cd; curl -#L https://github.com/karthilxg/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE.txt}
+```
+
+To update later on, just run that command again.
+
+##### Run the .dots Script with Command Line Arguments
+
+**Since you probably don't want to install every section**, the `.dots` script supports command line arguments to run only specified sections.  Simply pass in the [scripts](#scripts) that you want to install.  Below are some examples.
+
+Run `all`:
 
     $ ./.dots all
 
@@ -160,7 +173,7 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
     * Updates OS X and installs Xcode command line tools
 * [brew.sh](https://github.com/karthilxg/dotfiles/blob/master/brew.sh)
     * Installs common Homebrew formulae and apps
-* [osx.sh](https://github.com/karthilxg/dotfiles/blob/master/.osx)
+* [.osx](https://github.com/karthilxg/dotfiles/blob/master/.osx)
     * Sets up OS X defaults geared towards developers
 * [web.sh](https://github.com/karthilxg/dotfiles/blob/master/web.sh)
     * Sets up JavaScript web development
@@ -199,7 +212,7 @@ Run the `osxprep.sh` script:
 
 If you want to go the manual route, you can also install all updates by running "App Store", selecting the "Updates" icon, then updating both the OS and installed apps.
 
-##### osx.sh script (Sensible OS X defaults)
+##### .osx script (Sensible OS X defaults)
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
@@ -208,11 +221,11 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
   <br/>
 </p>
 
-When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `osx.sh` script also configures common third-party apps such Sublime Text and Chrome.
+When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `.osx` script also configures common third-party apps such Sublime Text and Chrome.
 
-**Note**: **I strongly encourage you read through the commented [osx.sh source file](https://github.com/donnemartin/dev-setup/blob/master/osx.sh) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
+**Note**: **I strongly encourage you read through the commented [.osx source file](https://github.com/donnemartin/dev-setup/blob/master/.osx) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
 
-Run the `osx.sh` script:
+Run the `.osx` script:
 
 ```bash
 ./.macos
@@ -257,7 +270,6 @@ If you're running 10.8 or older, you'll need to go to [http://developer.apple.co
 
 Once you reach the downloads page, search for "command line tools", and download the latest **Command Line Tools (OS X Mountain Lion) for Xcode**. Open the **.dmg** file once it's done downloading, and double-click on the **.mpkg** installer to launch the installation. When it's done, you can unmount the disk in Finder.
 
-
 ##### web.sh script
 
 <p align="center">
@@ -294,7 +306,7 @@ Sublime Text is not free, but I think it has an unlimited "evaluation period". A
 
 #### Configuration
 
-The [osx.sh script](#osxsh-script) contains Sublime Text configurations.
+The [.osx script](#osxsh-script) contains Sublime Text configurations.
 
 #### Seti_UI Theme for ST3
 
@@ -771,7 +783,7 @@ Feel free to contact me to discuss any issues, questions, or comments.
 * Email: [karthilxg@gmail.com](mailto:karthilxg@gmail.com)
 * Twitter: [@karthilxg](https://twitter.com/karthilxg)
 * GitHub: [karthilxg](https://github.com/karthilxg)
-* LinkedIn: [karthilxg](www.linkedin.com/in/karthilxg)
+* LinkedIn: [karthilxg](https://www.linkedin.com/in/karthilxg)
 
 ### License
 
