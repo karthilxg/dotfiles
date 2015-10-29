@@ -1,6 +1,6 @@
 # Karthi's dotfiles
 
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+![Screenshot of my shell prompt](https://cloud.githubusercontent.com/assets/3691228/10810695/ba68580a-7dc0-11e5-8dbc-3dfbfcddee61.png)
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
@@ -146,9 +146,9 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh`:
 
     $ ./.dots bootstrap osxprep brew osx
 
-Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh`, `pydata.sh`, `aws.sh`, and `datastores.sh`:
+Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
 
-    $ ./.dots bootstrap osxprep brew osx pydata aws datastores
+    $ ./.dots bootstrap osxprep brew osx webdev
 
 #### Scripts
 
@@ -469,10 +469,10 @@ To check your version of Git, run the following command:
 
 And `$ which git` should output `/usr/local/bin/git`.
 
-Let's set up some basic configuration. Download the [.gitconfig](https://raw.githubusercontent.com/donnemartin/dev-setup/master/.gitconfig) file to your home directory:
+Let's set up some basic configuration. Download the [.gitconfig](https://raw.githubusercontent.com/karthilxg/dotfiles/master/.gitconfig) file to your home directory:
 
     $ cd ~
-    $ curl -O https://raw.githubusercontent.com/donnemartin/dev-setup/master/.gitconfig
+    $ curl -O https://raw.githubusercontent.com/karthilxg/dotfiles/master/.gitconfig
 
 It will add some color to the `status`, `branch`, and `diff` Git commands, as well as a couple aliases. Feel free to take a look at the contents of the file, and add to it to your liking.
 

@@ -61,7 +61,7 @@ function runDots() {
             echo "Setting up JavaScript web development environment."
             echo "------------------------------"
             echo ""
-            #./webdev.sh # coming soon
+            ./web.sh # coming soon
         fi
     done
 
