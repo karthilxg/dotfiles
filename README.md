@@ -221,11 +221,11 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
   <br/>
 </p>
 
-When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `.osx` script also configures common third-party apps such Sublime Text and Chrome.
+When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `osx.sh` script also configures common third-party apps such Sublime Text and Chrome.
 
-**Note**: **I strongly encourage you read through the commented [.osx source file](https://github.com/donnemartin/dev-setup/blob/master/.osx) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
+**Note**: **I strongly encourage you read through the commented [osx.sh source file](https://github.com/donnemartin/dev-setup/blob/master/osx.sh) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
 
-Run the `.osx` script:
+Run the `osx.sh` script:
 
 ```bash
 ./.macos
