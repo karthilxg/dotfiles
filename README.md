@@ -49,7 +49,7 @@ export PATH="/usr/local/bin:$PATH"
     * Updates OS X and installs Xcode command line tools
 * [brew.sh script](#brewsh-script)
     * Installs common Homebrew formulae and apps
-* [.osx script](#.osx-script)
+* [osx.sh script](#osxsh-script)
     * Sets up OS X defaults geared towards developers
 * [web.sh script](#websh-script)
     * Sets up JavaScript web development
@@ -173,7 +173,7 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
     * Updates OS X and installs Xcode command line tools
 * [brew.sh](https://github.com/karthilxg/dotfiles/blob/master/brew.sh)
     * Installs common Homebrew formulae and apps
-* [.osx](https://github.com/karthilxg/dotfiles/blob/master/.osx)
+* [osx.sh](https://github.com/karthilxg/dotfiles/blob/master/osx.sh)
     * Sets up OS X defaults geared towards developers
 * [web.sh](https://github.com/karthilxg/dotfiles/blob/master/web.sh)
     * Sets up JavaScript web development
@@ -212,7 +212,7 @@ Run the `osxprep.sh` script:
 
 If you want to go the manual route, you can also install all updates by running "App Store", selecting the "Updates" icon, then updating both the OS and installed apps.
 
-##### .osx script (Sensible OS X defaults)
+##### osx.sh script (Sensible OS X defaults)
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
@@ -221,11 +221,11 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
   <br/>
 </p>
 
-When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `.osx` script also configures common third-party apps such Sublime Text and Chrome.
+When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `osx.sh` script also configures common third-party apps such Sublime Text and Chrome.
 
-**Note**: **I strongly encourage you read through the commented [.osx source file](https://github.com/donnemartin/dev-setup/blob/master/.osx) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
+**Note**: **I strongly encourage you read through the commented [osx.sh source file](https://github.com/donnemartin/dev-setup/blob/master/osx.sh) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
 
-Run the `.osx` script:
+Run the `osx.sh` script:
 
 ```bash
 ./.macos
@@ -306,7 +306,7 @@ Sublime Text is not free, but I think it has an unlimited "evaluation period". A
 
 #### Configuration
 
-The [.osx script](#osxsh-script) contains Sublime Text configurations.
+The [osx.sh script](#osxsh-script) contains Sublime Text configurations.
 
 #### Seti_UI Theme for ST3
 
@@ -396,7 +396,7 @@ Since we spend so much time in the terminal, we should try to make it a more ple
 
 #### Configuration
 
-The [bootstrap.sh script](#bootstrapsh-script) and [.osx script](#.osx-script) contain terminal customizations.
+The [bootstrap.sh script](#bootstrapsh-script) and [osx.sh script](#osxsh-script) contain terminal customizations.
 
 ### iTerm2
 
