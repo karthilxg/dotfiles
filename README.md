@@ -38,7 +38,7 @@ export PATH="/usr/local/bin:$PATH"
 * Section 1 contains the `dotfiles/scripts` and instructions to set up your system.
 * Sections 2 through 4 detail more information about installation, configuration, and usage for topics in Section 1.
 
-## Section 1: Installation
+#### Section 1: Installation
 
 **Scripts tested on OS X 10.10 Yosemite.**
 
@@ -49,12 +49,12 @@ export PATH="/usr/local/bin:$PATH"
     * Updates OS X and installs Xcode command line tools
 * [brew.sh script](#brewsh-script)
     * Installs common Homebrew formulae and apps
-* [osx.sh script](#osxsh-script)
+* [osx.sh script](#osxsh-script-sensible-os-x-defaults)
     * Sets up OS X defaults geared towards developers
 * [web.sh script](#websh-script)
     * Sets up JavaScript web development
 
-## Section 2: General Apps and Tools
+#### Section 2: General Apps and Tools
 
 * [Sublime Text](#sublime-text)
 * [Atom](#atom)
@@ -64,13 +64,13 @@ export PATH="/usr/local/bin:$PATH"
 * [Git](#git)
 * [Homebrew](#homebrew)
 
-## Section 3: JavaScript Web Development
+#### Section 3: JavaScript Web Development
 
 * [Node.js](#nodejs)
 * [JSHint](#jshint)
 * [SASS](#sass)
 
-## Section 4: Misc
+#### Section 4: Misc
 
 * [Contributions](#contributions)
 * [Credits](#credits)
@@ -306,7 +306,7 @@ Sublime Text is not free, but I think it has an unlimited "evaluation period". A
 
 #### Configuration
 
-The [osx.sh script](#osxsh-script) contains Sublime Text configurations.
+The [osx.sh script](#osxsh-script-sensible-os-x-defaults) contains Sublime Text configurations.
 
 #### Seti_UI Theme for ST3
 
@@ -340,6 +340,11 @@ Activate the Theme and Color-Scheme by modifying your user preferences file, whi
 #### Sublime Preferences and Packages
 
 Sublime user preferences and packages are automatically installed through package control while opening the sublime text first time after installation, check [Preferences.sublime-settings](https://github.com/karthilxg/dotfiles/blob/master/init/Preferences.sublime-settings) and [Package Control.sublime-settings](https://github.com/karthilxg/dotfiles/blob/master/init/Package Control.sublime-settings)
+
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/3691228/10811496/b5534006-7dc9-11e5-952d-9bf806a29755.png">
+  <br/>
+</p>
 
 Some of the package I've installed,
 
@@ -396,7 +401,7 @@ Since we spend so much time in the terminal, we should try to make it a more ple
 
 #### Configuration
 
-The [bootstrap.sh script](#bootstrapsh-script) and [osx.sh script](#osxsh-script) contain terminal customizations.
+The [bootstrap.sh script](#bootstrapsh-script) and [osx.sh script](#osxsh-script-sensible-os-x-defaults) contain terminal customizations.
 
 ### iTerm2
 
