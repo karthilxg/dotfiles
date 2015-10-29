@@ -1,7 +1,5 @@
 # Karthi's dotfiles
 
-# Karthi's dotfiles
-
 ![Screenshot of my shell prompt](https://cloud.githubusercontent.com/assets/3691228/10810695/ba68580a-7dc0-11e5-8dbc-3dfbfcddee61.png)
 
 **Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
