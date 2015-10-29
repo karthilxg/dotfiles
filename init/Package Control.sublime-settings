@@ -1,0 +1,44 @@
+{
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "All Autocomplete",
+        "AngularJS",
+        "AngularJS Snippets",
+        "Autoprefixer",
+        "BetterFindBuffer",
+        "Bootstrap 3 Snippets",
+        "BracketHighlighter",
+        "Can I Use",
+        "Clickable URLs",
+        "Color Highlighter",
+        "ColorPicker",
+        "CSScomb",
+        "DocBlockr",
+        "Dotfiles Syntax Highlighting",
+        "Emmet",
+        "FileDiffs",
+        "Flatron",
+        "Git",
+        "GitGutter",
+        "HTMLBeautify",
+        "Javascript Beautify",
+        "LiveReload",
+        "Markdown Preview",
+        "Package Control",
+        "SCSS Snippets",
+        "Seti_UI",
+        "SideBarEnhancements",
+        "SublimeLinter",
+        "SublimeLinter-contrib-scss-lint",
+        "SublimeLinter-jshint",
+        "Syntax Highlighting for Sass",
+        "Terminal",
+        "Theme - Cobalt2",
+        "Trimmer",
+        "Underscore.js Snippets"
+    ]
+}
