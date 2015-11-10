@@ -15,6 +15,9 @@
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 
+    # Stash everything in the current repository including all its submodules
+    stash = "git stash; git submodule foreach 'git stash'"
+
 	# Clone a repository including all submodules
 	c = clone --recursive
 
