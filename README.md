@@ -1,3 +1,4 @@
+
 # Karthi's dotfiles
 
 ![Screenshot of my shell prompt](https://cloud.githubusercontent.com/assets/3691228/10810695/ba68580a-7dc0-11e5-8dbc-3dfbfcddee61.png)
@@ -6,7 +7,7 @@
 
 ## Motivation
 
-Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `gotfiles` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
+Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `dotfiles` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
 
 * **OS X updates and Xcode Command Line Tools**
 * **OS X defaults** geared towards developers
