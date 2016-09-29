@@ -229,7 +229,7 @@ When setting up a new Mac, you may want to set OS X defaults geared towards deve
 Run the `osx.sh` script:
 
 ```bash
-./.macos
+./osx.sh
 ```
 **For your terminal customization to take full effect, quit and re-start the terminal.**
 
