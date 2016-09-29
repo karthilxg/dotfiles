@@ -1,8 +1,26 @@
 {
-    "color_scheme": "Packages/User/SublimeLinter/Seti (SL).tmTheme",
-    "theme": "Cobalt2.sublime-theme",
+    "always_show_minimap_viewport": true,
+    "binary_file_patterns":
+    [
+        "node_modules/",
+        "*.jpg",
+        "*.jpeg",
+        "*.png",
+        "*.gif",
+        "*.ttf",
+        "*.tga",
+        "*.dds",
+        "*.ico",
+        "*.eot",
+        "*.pdf",
+        "*.swf",
+        "*.jar",
+        "*.zip"
+    ],
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
     "default_encoding": "UTF-8",
-    "default_line_ending": "unix",
+    "default_line_ending": "lf",
     "detect_indentation": false,
     "draw_white_space": "all",
     "ensure_newline_at_eof_on_save": false,
@@ -18,23 +36,47 @@
     ],
     "folder_exclude_patterns":
     [
-        ".git",
-        "node_modules"
+        ".git"
     ],
-    "font_size": 12,
+    "font_size": 14,
     "highlight_modified_tabs": true,
     "hot_exit": false,
-    "line_padding_bottom": 5,
+    "ignored_packages":
+    [
+        "Emmet",
+        "MarkdownEditing",
+        "Trimmer",
+        "Vintage"
+    ],
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
+    "line_padding_bottom": 3,
+    "line_padding_top": 3,
     "match_brackets": true,
     "match_brackets_angle": true,
+    "material_theme_bold_tab": true,
+    "material_theme_compact_sidebar": true,
+    "material_theme_contrast_mode": true,
+    "material_theme_disable_fileicons": false,
+    "material_theme_disable_folder_animation": false,
+    "material_theme_disable_tree_indicator": false,
+    "material_theme_panel_separator": true,
+    "material_theme_small_statusbar": true,
+    "material_theme_small_tab": true,
+    "material_theme_tabs_autowidth": true,
+    "material_theme_tabs_separator": true,
+    "overlay_scroll_bars": "enabled",
     "remember_open_files": false,
     "rulers":
     [
-
     ],
     "show_encoding": true,
     "show_line_endings": true,
     "tab_size": 4,
+    "theme": "Material-Theme.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": true
