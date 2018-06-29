@@ -18,14 +18,14 @@ function runDots() {
             echo ""
             cd ~ && curl -#L https://github.com/karthilxg/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE.txt}
         fi
-        if [ $ARG == "osxprep" ] || [ $ARG == "all" ]; then
-            # Run the osxprep.sh Script
+        if [ $ARG == "macosprep" ] || [ $ARG == "all" ]; then
+            # Run the macosprep.sh Script
             echo ""
             echo "------------------------------"
-            echo "Updating OSX and installing Xcode command line tools"
+            echo "Updating macOS and installing Xcode command line tools"
             echo "------------------------------"
             echo ""
-            ./osxprep.sh
+            ./macosprep.sh
         fi
         if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
             # Run the brew.sh Script
@@ -40,9 +40,9 @@ function runDots() {
             echo ""
             ./brew.sh
         fi
-        if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
-            # Run the osx.sh Script
-            # I strongly suggest you read through the commented osx.sh
+        if [ $ARG == "macos" ] || [ $ARG == "all" ]; then
+            # Run the macos.sh Script
+            # I strongly suggest you read through the commented macos.sh
             # source file and tweak any settings based on your personal
             # preferences. The script defaults are intended for you to
             # customize. For example, if you are not running an SSD you
@@ -50,10 +50,10 @@ function runDots() {
             # SSD section.
             echo ""
             echo "------------------------------"
-            echo "Setting sensible OSX defaults."
+            echo "Setting sensible macOS defaults."
             echo "------------------------------"
             echo ""
-            ./osx.sh
+            ./macos.sh
         fi
         if [ $ARG == "webdev" ] || [ $ARG == "all" ]; then
             # Run the webdev.sh Script

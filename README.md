@@ -9,8 +9,8 @@
 
 Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `dotfiles` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
 
-* **OS X updates and Xcode Command Line Tools**
-* **OS X defaults** geared towards developers
+* **macOS updates and Xcode Command Line Tools**
+* **macOS defaults** geared towards developers
 * **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, etc
 * **Developer apps**: iTerm2, Sublime Text (Sublime Packages), Atom, Chrome, etc
 * **Javascript web development**: Node.js, JSHint, Grunt, Bower, Compass and SASS
@@ -41,17 +41,17 @@ export PATH="/usr/local/bin:$PATH"
 
 #### Section 1: Installation
 
-**Scripts tested on OS X 10.10 Yosemite.**
+**Scripts tested on macOS High Sierra 10.13.4 **
 
 * [Single Setup Script](#single-setup-script)
 * [bootstrap.sh script](#bootstrapsh-script)
     * Syncs dotfiles to your local home directory `~`
-* [osxprep.sh script](#osxprepsh-script)
-    * Updates OS X and installs Xcode command line tools
+* [macosprep.sh script](#macosprepsh-script)
+    * Updates macOS and installs Xcode command line tools
 * [brew.sh script](#brewsh-script)
     * Installs common Homebrew formulae and apps
-* [osx.sh script](#osxsh-script-sensible-os-x-defaults)
-    * Sets up OS X defaults geared towards developers
+* [macos.sh script](#macossh-script-sensible-os-x-defaults)
+    * Sets up macOS defaults geared towards developers
 * [web.sh script](#websh-script)
     * Sets up JavaScript web development
 
@@ -109,7 +109,7 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/karthilxg/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE.txt}
+cd; curl -#L https://github.com/karthilxg/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,osx.sh,LICENSE.txt}
 ```
 
 To update later on, just run that command again.
@@ -156,13 +156,13 @@ Run `all`:
 
     $ ./.dots all
 
-Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh`:
+Run `bootstrap.sh`, `macosprep.sh`, `brew.sh`, and `macos.sh`:
 
-    $ ./.dots bootstrap osxprep brew osx
+    $ ./.dots bootstrap macosprep brew macos
 
-Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
+Run `bootstrap.sh`, `macosprep.sh`, `brew.sh`, and `macos.sh` and `webdev.sh`:
 
-    $ ./.dots bootstrap osxprep brew osx webdev
+    $ ./.dots bootstrap macosprep brew macos webdev
 
 #### Scripts
 
@@ -170,12 +170,12 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
     * Runs specified scripts
 * [bootstrap.sh](https://github.com/karthilxg/dotfiles/blob/master/bootstrap.sh)
     * Syncs dotfiles to your local home directory `~`
-* [osxprep.sh](https://github.com/karthilxg/dotfiles/blob/master/osxprep.sh)
-    * Updates OS X and installs Xcode command line tools
+* [macosprep.sh](https://github.com/karthilxg/dotfiles/blob/master/macosprep.sh)
+    * Updates macOS and installs Xcode command line tools
 * [brew.sh](https://github.com/karthilxg/dotfiles/blob/master/brew.sh)
     * Installs common Homebrew formulae and apps
-* [osx.sh](https://github.com/karthilxg/dotfiles/blob/master/osx.sh)
-    * Sets up OS X defaults geared towards developers
+* [macos.sh](https://github.com/karthilxg/dotfiles/blob/master/macos.sh)
+    * Sets up macOS defaults geared towards developers
 * [web.sh](https://github.com/karthilxg/dotfiles/blob/master/web.sh)
     * Sets up JavaScript web development
 
@@ -183,7 +183,7 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
 
 * `.dots` will initially prompt you to enter your password.
 * `.dots` might ask you to re-enter your password at certain stages of the installation.
-* If OS X updates require a restart, simply run `.dots` again to resume where you left off.
+* If macOS updates require a restart, simply run `.dots` again to resume where you left off.
 * When installing the Xcode command line tools, a dialog box will confirm installation.
     * Once Xcode is installed, follow the instructions on the terminal to continue.
 * `.dots` runs `brew.sh`, which takes awhile to complete as some formulae need to be installed from source.
@@ -198,22 +198,22 @@ Run `bootstrap.sh`, `osxprep.sh`, `brew.sh`, and `osx.sh` and `webdev.sh`:
 
 The `bootstrap.sh` script will sync the dev-setup repo to your local home directory.  This will include customizations for Vim, bash, curl, git, tab completion, aliases, a number of utility functions, etc.  Section 2 of this repo describes some of the customizations.
 
-##### osxprep.sh script
+##### macosprep.sh script
 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/3691228/10807160/e4d06384-7d99-11e5-875e-8c2866a90f09.png">
   <br/>
 </p>
 
-Run the `osxprep.sh` script:
+Run the `macosprep.sh` script:
 
-    $ ./osxprep.sh
+    $ ./macosprep.sh
 
-`osxprep.sh` will first install all updates.  If a restart is required, simply run the script again.  Once all updates are installed, `osxprep.sh` will then [Install Xcode Command Line Tools](#install-xcode-command-line-tools).
+`macosprep.sh` will first install all updates.  If a restart is required, simply run the script again.  Once all updates are installed, `macosprep.sh` will then [Install Xcode Command Line Tools](#install-xcode-command-line-tools).
 
 If you want to go the manual route, you can also install all updates by running "App Store", selecting the "Updates" icon, then updating both the OS and installed apps.
 
-##### osx.sh script (Sensible OS X defaults)
+##### macos.sh script (Sensible macOS defaults)
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
@@ -222,14 +222,14 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
   <br/>
 </p>
 
-When setting up a new Mac, you may want to set OS X defaults geared towards developers.  The `osx.sh` script also configures common third-party apps such Sublime Text and Chrome.
+When setting up a new Mac, you may want to set macOS defaults geared towards developers.  The `macos.sh` script also configures common third-party apps such Sublime Text and Chrome.
 
-**Note**: **I strongly encourage you read through the commented [osx.sh source file](https://github.com/donnemartin/dev-setup/blob/master/osx.sh) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
+**Note**: **I strongly encourage you read through the commented [macos.sh source file](https://github.com/donnemartin/dev-setup/blob/master/macos.sh) and tweak any settings based on your personal preferences.  The script defaults are intended for you to customize.**  For example, if you are not running an SSD you might want to change some of the settings listed in the SSD section.
 
-Run the `osx.sh` script:
+Run the `macos.sh` script:
 
 ```bash
-./osx.sh
+./macos.sh
 ```
 **For your terminal customization to take full effect, quit and re-start the terminal.**
 
@@ -255,22 +255,22 @@ Some of the apps installed by the `brew.sh` script include: Chrome, Firefox, Sub
 
 An important dependency before many tools such as Homebrew can work is the **Command Line Tools for Xcode**. These include compilers like gcc that will allow you to build from source.
 
-If you are running **OS X 10.9 Mavericks or later**, then you can install the Xcode Command Line Tools directly from the command line with:
+If you are running **macOS 10.9 Mavericks or later**, then you can install the Xcode Command Line Tools directly from the command line with:
 
     $ xcode-select --install
 
-**Note**: the `osxprep.sh` script executes this command.
+**Note**: the `macosprep.sh` script executes this command.
 
 Running the command above will display a dialog where you can either:
 * Install Xcode and the command line tools
 * Install the command line tools only
 * Cancel the install
 
-###### OS X 10.8 and Older
+###### macOS 10.8 and Older
 
 If you're running 10.8 or older, you'll need to go to [http://developer.apple.com/downloads](http://developer.apple.com/downloads), and sign in with your Apple ID (the same one you use for iTunes and app purchases). Unfortunately, you're greeted by a rather annoying questionnaire. All questions are required, so feel free to answer at random.
 
-Once you reach the downloads page, search for "command line tools", and download the latest **Command Line Tools (OS X Mountain Lion) for Xcode**. Open the **.dmg** file once it's done downloading, and double-click on the **.mpkg** installer to launch the installation. When it's done, you can unmount the disk in Finder.
+Once you reach the downloads page, search for "command line tools", and download the latest **Command Line Tools (macOS Mountain Lion) for Xcode**. Open the **.dmg** file once it's done downloading, and double-click on the **.mpkg** installer to launch the installation. When it's done, you can unmount the disk in Finder.
 
 ##### web.sh script
 
@@ -302,13 +302,13 @@ The [brew.sh script](#brewsh-script) installs Sublime Text.
 
 If you prefer to install it separately, go ahead and [download](http://www.sublimetext.com/) it. Open the **.dmg** file, drag-and-drop in the **Applications** folder.
 
-**Note**: At this point I'm going to create a shortcut on the OS X Dock for both for Sublime Text. To do so, right-click on the running application and select **Options > Keep in Dock**.
+**Note**: At this point I'm going to create a shortcut on the macOS Dock for both for Sublime Text. To do so, right-click on the running application and select **Options > Keep in Dock**.
 
 Sublime Text is not free, but I think it has an unlimited "evaluation period". Anyhow, we're going to be using it so much that even the seemingly expensive $70 price tag is worth every penny. If you can afford it, I suggest you [support](http://www.sublimetext.com/buy) this awesome tool.
 
 #### Configuration
 
-The [osx.sh script](#osxsh-script-sensible-os-x-defaults) contains Sublime Text configurations.
+The [macos.sh script](#macossh-script-sensible-os-x-defaults) contains Sublime Text configurations.
 
 #### Seti_UI Theme for ST3
 
@@ -403,7 +403,7 @@ Since we spend so much time in the terminal, we should try to make it a more ple
 
 #### Configuration
 
-The [bootstrap.sh script](#bootstrapsh-script) and [osx.sh script](#osxsh-script-sensible-os-x-defaults) contain terminal customizations.
+The [bootstrap.sh script](#bootstrapsh-script) and [macos.sh script](#macossh-script-sensible-os-x-defaults) contain terminal customizations.
 
 ### iTerm2
 
@@ -422,7 +422,7 @@ Let's just quickly change some preferences. In iTerm > Preferences..., under the
 
 In the tab Profiles, create a new one with the "+" icon, and rename it to your first name for example. Then, select Other Actions... > Set as Default. Under the section Window, change the size to something better, like Columns: 125 and Rows: 35.  I also like to set General > Working Directory > Reuse previous session's directory.  Finally, I change the wy the option key works so that I can quickly jump between words as described [here](https://coderwall.com/p/h6yfda/use-and-to-jump-forwards-backwards-words-in-iterm-2-on-os-x).
 
-When done, hit the red "X" in the upper left (saving is automatic in OS X preference panes). Close the window and open a new one to see the size change.
+When done, hit the red "X" in the upper left (saving is automatic in macOS preference panes). Close the window and open a new one to see the size change.
 
 #### Configuration
 
@@ -439,7 +439,7 @@ Scroll down the page and download the latest version. Unzip the archive. In it y
 
 **Note**: You don't have to do this, but there is one color in the **Solarized Dark** preset I don't agree with, which is *Bright Black*. You'll notice it's too close to *Black*. So I change it to be the same as *Bright Yellow*, i.e. **R 83 G 104 B 112**.
 
-Not a lot of colors yet. We need to tweak a little bit our Unix user's profile for that. This is done (on OS X and Linux), in the `~/.bash_profile` text file (`~` stands for the user's home directory).
+Not a lot of colors yet. We need to tweak a little bit our Unix user's profile for that. This is done (on macOS and Linux), in the `~/.bash_profile` text file (`~` stands for the user's home directory).
 
 We'll come back to the details of that later, but for now, just download the files [.bash_profile](https://raw.githubusercontent.com/karthilxg/dotfiles/master/.bash_profile), [.bash_prompt](https://raw.githubusercontent.com/karthilxg/dotfiles/master/.bash_prompt), [.aliases](https://raw.githubusercontent.com/karthilxg/dotfiles/master/.aliases) attached to this document into your home directory (`.bash_profile` is the one that gets loaded, I've set it up to call the others):
 
@@ -508,7 +508,7 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
 
     $ git config --global credential.helper osxkeychain
 
-**Note**: On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files. You can take a look at this repository's [.gitignore](https://github.com/donnemartin/dev-setup/blob/master/.gitignore) file for inspiration.  Also check out GitHub's [collection of .gitignore templates](https://github.com/github/gitignore).
+**Note**: On a Mac, it is important to remember to add `.DS_Store` (a hidden macOS system file that's put in folders) to your `.gitignore` files. You can take a look at this repository's [.gitignore](https://github.com/donnemartin/dev-setup/blob/master/.gitignore) file for inspiration.  Also check out GitHub's [collection of .gitignore templates](https://github.com/github/gitignore).
 
 ### Homebrew
 
@@ -517,7 +517,7 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
   <br/>
 </p>
 
-Package managers make it so much easier to install and update applications (for Operating Systems) or libraries (for programming languages). The most popular one for OS X is [Homebrew](http://brew.sh/).
+Package managers make it so much easier to install and update applications (for Operating Systems) or libraries (for programming languages). The most popular one for macOS is [Homebrew](http://brew.sh/).
 
 #### Installation
 
